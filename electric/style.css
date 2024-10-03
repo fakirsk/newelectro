@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0S;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+header{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+     background: #0842A6 !important;
+}
+.navbar ul li a{
+    margin-left: 40px;
+    color: #fff !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-inner{
+    padding-top: 30px;
+    cursor: pointer;
+    height: 620px;
+    width: 100%;
+
+}
+.carousel-item img{
+    width: 100%;
+    height: 590px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+
+}
+
+.carousel-caption{
+    bottom: 350px;
+    padding-left: 500px;
+    text-align: justify;
+}
+.carousel-caption h5{
+    font-size: 26px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+.carousel-caption .caption-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.caption-btn{
+    padding: 10px 25px;
+    background: #0842A6;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.caption-btn::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #e0e000;
+    z-index: -1;
+    transition: .3s;
+   
+}
+.caption-btn:hover::before{
+    width: 100%;
+}
+
+.banner-box{
+    padding: 100px 150px;
+    background: url(images/sub-banner-1.jpg) center center no-repeat;
+}
+.banner-box-b{
+    padding: 100px 150px;
+    background: url(images/sub-banner-2.jpg) center center no-repeat;
+}
+.banner-box-c{
+    padding: 100px 150px;
+    background: url(images/sub-banner-3.jpg) center center no-repeat;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.card-price{
+    margin-top: -14px;
+}
+.who-banner{
+    color: #fff;
+    text-align: end;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url(https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/cms/cms-banner.jpg) center center no-repeat;
+}
+.who-banner a:hover{
+    background-color: #e0e000;
+    cursor: pointer;
+}
+
+#feedback .carousel-inner{
+    height: 300px;
+    margin-top: 130px;
+}
+
+.brand-box{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-icon{
+    padding-bottom: 10px;
+}
+ 
+@media screen and (max-width:900px) {
+    .tools-card .card{
+        width: 100%;
+        padding-left: 0px;
+
+    }
+    .carousel-caption{
+        bottom: 350px;
+        padding-left: 0px;
+        text-align: justify;
+    }
+    .brand-box{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+    }
+    #feedback .carousel-inner {
+        padding: 0px;
+        width: 100%;
+    }
+    #feedback .carousel-item p {
+        font-size: 20px;
+    }
+    
+    #blogs .card{
+        padding-left: 0px;
+        width: 100%;
+        margin-bottom: 30px !important;
+    }
+    .tools-card .card{
+        margin-bottom: 30px !important;
+    }
+     .card{
+        margin-bottom: 30px !important;
+    }
+    footer{
+        padding: 10px 20px;
+    }
+    @media screen and (max-width:390px){
+        .img-box{
+            padding: 0px;
+           margin-right: 33px !important;  
+        }
+
+    }
+} 
+#signe{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.signe-areya{
+    background-color: #0842A6;
+    padding: 20px;
+}
+.signe-eliment{
+    color: #fff;
+    display: flex;
+    padding-left: 35px;
+}
+.signe-icon{
+    font-size: 25px;
+}
+.signe-heading{
+    padding-left: 3px;
+    padding-top: 7px;
+}
+.footer-heading h5{
+    font-size: 19px;
+}
+.footer-list{
+    list-style: none;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.footer-list li{
+    color: rgb(172, 167, 167);
+}
+.mail{
+    padding: 5px 0px;
+}
+.mail input{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    
+}
+.footer-icon{
+    padding-top: 10px;
+    margin-left: -12px;
+}
+.footer-icon i{
+    margin-left: 12px;
+    font-size: 20px;
+    color: #0842A6;
+}
